@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Commission Calculation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #a67e7e;
+            border: 1px solid black;
+            padding: 20px;
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+
+        input[type="text"] {
+            width: 150px;
+            padding: 5px;
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #670909;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .submit-btn:hover {
+            background-color:  #8f3c55;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Sales Commission Calculation</h2>
+
+        <form action="sales_commission.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="month">Month:</label>
+                <input type="text" id="month" name="month">
+            </div>
+
+            <div class="form-group">
+                <label for="sales">Sales Amount:</label>
+                <input type="text" id="sales" name="sales">
+            </div>
+
+            <button type="submit" class="submit-btn">Calculate Commission</button>
+        </form>
+    </div>
+
+</body>
+</html>
